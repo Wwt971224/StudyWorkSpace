@@ -2927,3 +2927,127 @@ java.net.ConnectException: no available server, currentServerAddr : http://121.3
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
 	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-01-27 11:42:08.523 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 11:42:08.523 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 11:42:08.527 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 11:42:08.528 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 11:42:08.598 [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 11:42:08.600 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 11:42:08.600 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@user-service:10.1.6.44:8050 from beat map.
+2022-01-27 11:42:08.601 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='10.1.6.44', port=8050, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 11:42:08.667 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 11:42:08.668 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 11:42:10.528 [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][238] - removed ips(1) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"10.1.6.44#8050#DEFAULT#DEFAULT_GROUP@@user-service","ip":"10.1.6.44","port":8050,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 11:42:10.529 [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][271] - current ips:(0) service: DEFAULT_GROUP@@user-service -> []
+2022-01-27 11:42:12.542 [Thread-22] [INFO ] [com.netflix.loadbalancer.PollingServerListUpdater][53] - Shutting down the Executor Pool for PollingServerListUpdater
+2022-01-27 11:42:12.542 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 11:42:12.543 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 11:42:12.544 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 11:42:12.545 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 11:42:12.606 [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 11:42:12.607 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 11:42:12.607 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@shop-server:10.1.6.44:8030 from beat map.
+2022-01-27 11:42:12.608 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@shop-server with instance: Instance{instanceId='null', ip='10.1.6.44', port=8030, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 11:42:12.671 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 11:42:12.671 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 11:42:12.672 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-01-27 11:42:12.672 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][413] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-01-27 11:42:12.712 [main] [WARN ] [com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder][87] - Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2022-01-27 11:42:12.788 [main] [INFO ] [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration][112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2022-01-27 11:42:12.826 [main] [INFO ] [com.ipinyou.user.UserApplication][651] - No active profile set, falling back to default profiles: default
+2022-01-27 11:42:13.240 [main] [INFO ] [org.springframework.cloud.context.scope.GenericScope][295] - BeanFactory id=a8c72a2b-349a-37f8-b5c7-8eb49f6baa28
+2022-01-27 11:42:13.529 [main] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][108] - Tomcat initialized with port(s): 8050 (http)
+2022-01-27 11:42:13.537 [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol][173] - Initializing ProtocolHandler ["http-nio-8050"]
+2022-01-27 11:42:13.537 [main] [INFO ] [org.apache.catalina.core.StandardService][173] - Starting service [Tomcat]
+2022-01-27 11:42:13.537 [main] [INFO ] [org.apache.catalina.core.StandardEngine][173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-01-27 11:42:13.591 [main] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][173] - Initializing Spring embedded WebApplicationContext
+2022-01-27 11:42:13.592 [main] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][285] - Root WebApplicationContext: initialization completed in 755 ms
+2022-01-27 11:42:14.040 [main] [WARN ] [com.netflix.config.sources.URLConfigurationSource][126] - No URLs will be polled as dynamic configuration sources.
+2022-01-27 11:42:14.040 [main] [INFO ] [com.netflix.config.sources.URLConfigurationSource][127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-27 11:42:14.043 [main] [WARN ] [com.netflix.config.sources.URLConfigurationSource][126] - No URLs will be polled as dynamic configuration sources.
+2022-01-27 11:42:14.043 [main] [INFO ] [com.netflix.config.sources.URLConfigurationSource][127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-27 11:42:14.202 [main] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][181] - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 11:42:14.322 [main] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 11:42:14.570 [main] [INFO ] [com.alibaba.nacos.client.naming][65] - initializer namespace from System Property :null
+2022-01-27 11:42:14.570 [main] [INFO ] [com.alibaba.nacos.client.naming][74] - initializer namespace from System Environment :null
+2022-01-27 11:42:14.570 [main] [INFO ] [com.alibaba.nacos.client.naming][84] - initializer namespace from System Property :null
+2022-01-27 11:42:14.675 [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol][173] - Starting ProtocolHandler ["http-nio-8050"]
+2022-01-27 11:42:14.703 [main] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][220] - Tomcat started on port(s): 8050 (http) with context path ''
+2022-01-27 11:42:14.705 [main] [INFO ] [com.alibaba.nacos.client.naming][81] - [BEAT] adding beat: BeatInfo{port=8050, ip='10.1.6.44', weight=1.0, serviceName='DEFAULT_GROUP@@user-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-01-27 11:42:14.706 [main] [INFO ] [com.alibaba.nacos.client.naming][230] - [REGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 registering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='10.1.6.44', port=8050, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-01-27 11:42:14.768 [main] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][75] - nacos registry, DEFAULT_GROUP user-service 10.1.6.44:8050 register finished
+2022-01-27 11:42:14.782 [main] [INFO ] [com.ipinyou.user.UserApplication][61] - Started UserApplication in 2.642 seconds (JVM running for 3.136)
+2022-01-27 11:42:14.784 [main] [INFO ] [com.alibaba.nacos.client.config.impl.ClientWorker][169] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [subscribe] user-service.yml+DEFAULT_GROUP+f572a232-65c6-4a03-8faa-c276297fac38
+2022-01-27 11:42:14.785 [main] [INFO ] [com.alibaba.nacos.client.config.impl.CacheData][92] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [add-listener] ok, tenant=f572a232-65c6-4a03-8faa-c276297fac38, dataId=user-service.yml, group=DEFAULT_GROUP, cnt=1
+2022-01-27 11:42:14.785 [main] [INFO ] [com.alibaba.nacos.client.config.impl.ClientWorker][169] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [subscribe] user-service+DEFAULT_GROUP+f572a232-65c6-4a03-8faa-c276297fac38
+2022-01-27 11:42:14.785 [main] [INFO ] [com.alibaba.nacos.client.config.impl.CacheData][92] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [add-listener] ok, tenant=f572a232-65c6-4a03-8faa-c276297fac38, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2022-01-27 11:42:15.689 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][132] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-01-27 11:42:16.040 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 11:42:16.040 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 11:42:16.040 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 11:42:16.041 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 11:42:16.103 [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 11:42:16.104 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 11:42:16.105 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@user-service:10.1.6.44:8050 from beat map.
+2022-01-27 11:42:16.105 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='10.1.6.44', port=8050, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 11:42:16.174 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 11:42:16.174 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 11:42:19.187 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-01-27 11:42:19.187 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][413] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-01-27 11:42:21.939 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][132] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-01-27 11:42:23.975 [main] [WARN ] [com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder][87] - Ignore the empty nacos configuration and get it based on dataId[user-service] & group[DEFAULT_GROUP]
+2022-01-27 11:42:24.039 [main] [INFO ] [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration][112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-user-service.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-user-service,DEFAULT_GROUP'}]
+2022-01-27 11:42:24.075 [main] [INFO ] [com.ipinyou.user.UserApplication][651] - No active profile set, falling back to default profiles: default
+2022-01-27 11:42:24.433 [main] [INFO ] [org.springframework.cloud.context.scope.GenericScope][295] - BeanFactory id=a8c72a2b-349a-37f8-b5c7-8eb49f6baa28
+2022-01-27 11:42:24.681 [main] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][108] - Tomcat initialized with port(s): 8050 (http)
+2022-01-27 11:42:24.686 [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol][173] - Initializing ProtocolHandler ["http-nio-8050"]
+2022-01-27 11:42:24.686 [main] [INFO ] [org.apache.catalina.core.StandardService][173] - Starting service [Tomcat]
+2022-01-27 11:42:24.687 [main] [INFO ] [org.apache.catalina.core.StandardEngine][173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-01-27 11:42:24.734 [main] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][173] - Initializing Spring embedded WebApplicationContext
+2022-01-27 11:42:24.734 [main] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][285] - Root WebApplicationContext: initialization completed in 650 ms
+2022-01-27 11:42:25.076 [main] [WARN ] [com.netflix.config.sources.URLConfigurationSource][126] - No URLs will be polled as dynamic configuration sources.
+2022-01-27 11:42:25.076 [main] [INFO ] [com.netflix.config.sources.URLConfigurationSource][127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-27 11:42:25.078 [main] [WARN ] [com.netflix.config.sources.URLConfigurationSource][126] - No URLs will be polled as dynamic configuration sources.
+2022-01-27 11:42:25.078 [main] [INFO ] [com.netflix.config.sources.URLConfigurationSource][127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-27 11:42:25.189 [main] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][181] - Initializing ExecutorService 'applicationTaskExecutor'
+2022-01-27 11:42:25.300 [main] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 11:42:25.543 [main] [INFO ] [com.alibaba.nacos.client.naming][65] - initializer namespace from System Property :null
+2022-01-27 11:42:25.543 [main] [INFO ] [com.alibaba.nacos.client.naming][74] - initializer namespace from System Environment :null
+2022-01-27 11:42:25.543 [main] [INFO ] [com.alibaba.nacos.client.naming][84] - initializer namespace from System Property :null
+2022-01-27 11:42:25.643 [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol][173] - Starting ProtocolHandler ["http-nio-8050"]
+2022-01-27 11:42:25.658 [main] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][220] - Tomcat started on port(s): 8050 (http) with context path ''
+2022-01-27 11:42:25.660 [main] [INFO ] [com.alibaba.nacos.client.naming][81] - [BEAT] adding beat: BeatInfo{port=8050, ip='10.1.6.44', weight=1.0, serviceName='DEFAULT_GROUP@@user-service', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-01-27 11:42:25.661 [main] [INFO ] [com.alibaba.nacos.client.naming][230] - [REGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 registering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='10.1.6.44', port=8050, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-01-27 11:42:25.721 [main] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][75] - nacos registry, DEFAULT_GROUP user-service 10.1.6.44:8050 register finished
+2022-01-27 11:42:25.734 [main] [INFO ] [com.ipinyou.user.UserApplication][61] - Started UserApplication in 2.271 seconds (JVM running for 2.873)
+2022-01-27 11:42:25.736 [main] [INFO ] [com.alibaba.nacos.client.config.impl.ClientWorker][169] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [subscribe] user-service.yml+DEFAULT_GROUP+f572a232-65c6-4a03-8faa-c276297fac38
+2022-01-27 11:42:25.736 [main] [INFO ] [com.alibaba.nacos.client.config.impl.CacheData][92] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [add-listener] ok, tenant=f572a232-65c6-4a03-8faa-c276297fac38, dataId=user-service.yml, group=DEFAULT_GROUP, cnt=1
+2022-01-27 11:42:25.737 [main] [INFO ] [com.alibaba.nacos.client.config.impl.ClientWorker][169] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [subscribe] user-service+DEFAULT_GROUP+f572a232-65c6-4a03-8faa-c276297fac38
+2022-01-27 11:42:25.737 [main] [INFO ] [com.alibaba.nacos.client.config.impl.CacheData][92] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [add-listener] ok, tenant=f572a232-65c6-4a03-8faa-c276297fac38, dataId=user-service, group=DEFAULT_GROUP, cnt=1
+2022-01-27 11:42:28.835 [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][232] - new ips(1) service: DEFAULT_GROUP@@user-service@@DEFAULT -> [{"instanceId":"10.1.6.44#8050#DEFAULT#DEFAULT_GROUP@@user-service","ip":"10.1.6.44","port":8050,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 11:42:28.844 [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][271] - current ips:(1) service: DEFAULT_GROUP@@user-service@@DEFAULT -> [{"instanceId":"10.1.6.44#8050#DEFAULT#DEFAULT_GROUP@@user-service","ip":"10.1.6.44","port":8050,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 11:42:32.017 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 11:42:32.017 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 11:42:32.017 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 11:42:32.017 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 11:42:32.075 [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 11:42:32.077 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 11:42:32.078 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@user-service:10.1.6.44:8050 from beat map.
+2022-01-27 11:42:32.078 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='10.1.6.44', port=8050, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 11:42:32.138 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 11:42:32.138 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 11:42:35.151 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-01-27 11:42:35.159 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][413] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-01-27 11:42:38.171 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][132] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-01-27 11:42:41.186 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][136] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2022-01-27 11:42:41.187 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2022-01-27 11:42:41.187 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2022-01-27 11:42:41.187 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][418] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2022-01-27 11:42:41.188 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][719] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2022-01-27 11:42:41.188 [SpringContextShutdownHook] [WARN ] [com.alibaba.nacos.client.naming][72] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2022-01-27 11:42:41.188 [SpringContextShutdownHook] [WARN ] [com.alibaba.nacos.client.naming][79] - [NamingHttpClientManager] Destruction of the end
+2022-01-27 11:42:41.188 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.identify.CredentialWatcher][105] - [null] CredentialWatcher is stopped
+2022-01-27 11:42:41.189 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.identify.CredentialService][98] - [null] CredentialService is freed
+2022-01-27 11:42:41.189 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][723] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2022-01-27 11:42:41.190 [SpringContextShutdownHook] [WARN ] [org.springframework.beans.factory.support.DisposableBeanAdapter][349] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
+2022-01-27 11:42:41.195 [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor][218] - Shutting down ExecutorService 'applicationTaskExecutor'
