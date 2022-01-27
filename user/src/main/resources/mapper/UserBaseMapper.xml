@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ipinyou.user.repository.mysql.UserBaseDAO">
+
+    <!-- 通用查询映射结果 -->
+    <resultMap id="BaseResultMap" type="com.ipinyou.user.entity.UserBaseEntity">
+        <id column="user_id" property="userId" />
+    <result column="version" property="version" />
+    <result column="is_deleted" property="isDeleted" />
+    <result column="create_time" property="createTime" />
+    <result column="update_time" property="updateTime" />
+    <result column="create_by" property="createBy" />
+    <result column="update_by" property="updateBy" />
+        <result column="real_name" property="realName" />
+        <result column="user_mobile" property="userMobile" />
+    </resultMap>
+
+    <!-- 通用查询结果列 -->
+    <sql id="Base_Column_List">
+        version,
+        is_deleted,
+        create_time,
+        update_time,
+        create_by,
+        update_by,
+        user_id, real_name, user_mobile
+    </sql>
+
+</mapper>

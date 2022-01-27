@@ -1,0 +1,14 @@
+server:
+  port: 8020
+spring:
+  application:
+    name: user-service
+  cloud:
+    nacos:
+      server-addr: 121.37.226.39:8848
+      discovery:
+        namespace: f572a232-65c6-4a03-8faa-c276297fac38
+      config:
+        server-addr: 121.37.226.39:8848
+        namespace: f572a232-65c6-4a03-8faa-c276297fac38
+        file-extension: yml

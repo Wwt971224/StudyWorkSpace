@@ -1,0 +1,13 @@
+server:
+  port: 8010
+spring:
+  application:
+    name: shop-server
+  cloud:
+    nacos:
+      server-addr: 121.37.226.39:8848
+      discovery:
+        namespace: f572a232-65c6-4a03-8faa-c276297fac38
+      config:
+        namespace: f572a232-65c6-4a03-8faa-c276297fac38
+        file-extension: yml
