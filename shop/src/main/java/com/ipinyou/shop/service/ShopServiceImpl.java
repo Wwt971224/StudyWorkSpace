@@ -9,8 +9,8 @@ import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.Map;
-import java.util.concurrent.*;
+import java.util.concurrent.CompletableFuture;
+import java.util.concurrent.ThreadPoolExecutor;
 
 @Slf4j
 @Service
@@ -40,15 +40,5 @@ public class ShopServiceImpl implements IShopService {
 
     }
 
-    public static void main(String[] args) {
-        ExecutorService executorService = Executors.newFixedThreadPool(10);
-        MDC.put("name", "连岐");
-        Map<String, String> copyOfContextMap = MDC.getCopyOfContextMap();
-        executorService.submit(
-                () ->{
-                    MDC.setContextMap(copyOfContextMap);
-                    System.out.println("MDC.get(\"name\") = " + MDC.get("name"));
-                }
-        );
     }
 }

@@ -3821,3 +3821,209 @@ java.net.ConnectException: no available server, currentServerAddr : http://121.3
 ]}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@51ea3ae3
 2022-01-27 14:27:18.352 [http-nio-8050-exec-10] [INFO ] [com.ipinyou.user.service.impl.UserBaseServiceImpl][44] - f9061a7410d55e8a
 2022-01-27 14:27:19.259 [traceId:] [PollingServerListUpdater-0] [INFO ] [com.netflix.config.ChainedDynamicProperty][115] - Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-01-27 15:19:10.936 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 15:19:10.936 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 15:19:10.940 [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 15:19:10.941 [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 15:19:11.009 [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 15:19:11.012 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 15:19:11.012 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@user-service:10.1.6.44:8050 from beat map.
+2022-01-27 15:19:11.012 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@user-service with instance: Instance{instanceId='null', ip='10.1.6.44', port=8050, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 15:19:11.282 [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 15:19:11.282 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 15:19:12.659 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-01-27 15:19:12.660 [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][413] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-01-27 15:19:15.019 [traceId:] [Thread-26] [INFO ] [com.netflix.loadbalancer.PollingServerListUpdater][53] - Shutting down the Executor Pool for PollingServerListUpdater
+2022-01-27 15:19:15.019 [traceId:] [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 15:19:15.019 [traceId:] [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 15:19:15.020 [traceId:] [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 15:19:15.021 [traceId:] [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 15:19:15.082 [traceId:] [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 15:19:15.084 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 15:19:15.084 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@shop-server:10.1.6.44:8030 from beat map.
+2022-01-27 15:19:15.084 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@shop-server with instance: Instance{instanceId='null', ip='10.1.6.44', port=8030, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 15:19:15.166 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 15:19:15.167 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 15:19:16.872 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][238] - removed ips(1) service: DEFAULT_GROUP@@user-service -> [{"instanceId":"10.1.6.44#8050#DEFAULT#DEFAULT_GROUP@@user-service","ip":"10.1.6.44","port":8050,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@user-service","metadata":{"preserved.register.source":"SPRING_CLOUD"},"ipDeleteTimeout":30000,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000}]
+2022-01-27 15:19:16.875 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][271] - current ips:(0) service: DEFAULT_GROUP@@user-service -> []
+2022-01-27 20:27:41.476 [traceId:] [main] [WARN ] [com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder][87] - Ignore the empty nacos configuration and get it based on dataId[shop-server] & group[DEFAULT_GROUP]
+2022-01-27 20:27:41.550 [traceId:] [main] [INFO ] [org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration][112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-shop-server.yml,DEFAULT_GROUP'}, BootstrapPropertySource {name='bootstrapProperties-shop-server,DEFAULT_GROUP'}]
+2022-01-27 20:27:41.582 [traceId:] [main] [INFO ] [com.ipinyou.shop.ShopApplication][651] - No active profile set, falling back to default profiles: default
+2022-01-27 20:27:41.904 [traceId:] [main] [INFO ] [org.springframework.cloud.context.scope.GenericScope][295] - BeanFactory id=5eff32c3-98a4-3728-9af9-76a182ce6010
+2022-01-27 20:27:42.142 [traceId:] [main] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][108] - Tomcat initialized with port(s): 8030 (http)
+2022-01-27 20:27:42.147 [traceId:] [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol][173] - Initializing ProtocolHandler ["http-nio-8030"]
+2022-01-27 20:27:42.147 [traceId:] [main] [INFO ] [org.apache.catalina.core.StandardService][173] - Starting service [Tomcat]
+2022-01-27 20:27:42.147 [traceId:] [main] [INFO ] [org.apache.catalina.core.StandardEngine][173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2022-01-27 20:27:42.193 [traceId:] [main] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][173] - Initializing Spring embedded WebApplicationContext
+2022-01-27 20:27:42.193 [traceId:] [main] [INFO ] [org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext][285] - Root WebApplicationContext: initialization completed in 602 ms
+2022-01-27 20:27:42.501 [traceId:] [main] [WARN ] [com.netflix.config.sources.URLConfigurationSource][126] - No URLs will be polled as dynamic configuration sources.
+2022-01-27 20:27:42.502 [traceId:] [main] [INFO ] [com.netflix.config.sources.URLConfigurationSource][127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-27 20:27:42.503 [traceId:] [main] [WARN ] [com.netflix.config.sources.URLConfigurationSource][126] - No URLs will be polled as dynamic configuration sources.
+2022-01-27 20:27:42.503 [traceId:] [main] [INFO ] [com.netflix.config.sources.URLConfigurationSource][127] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2022-01-27 20:27:42.694 [traceId:] [main] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][181] - Initializing ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 20:27:42.878 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.naming][65] - initializer namespace from System Property :null
+2022-01-27 20:27:42.879 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.naming][74] - initializer namespace from System Environment :null
+2022-01-27 20:27:42.879 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.naming][84] - initializer namespace from System Property :null
+2022-01-27 20:27:43.022 [traceId:] [main] [INFO ] [org.apache.coyote.http11.Http11NioProtocol][173] - Starting ProtocolHandler ["http-nio-8030"]
+2022-01-27 20:27:43.039 [traceId:] [main] [INFO ] [org.springframework.boot.web.embedded.tomcat.TomcatWebServer][220] - Tomcat started on port(s): 8030 (http) with context path ''
+2022-01-27 20:27:43.041 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.naming][81] - [BEAT] adding beat: BeatInfo{port=8030, ip='10.1.6.44', weight=1.0, serviceName='DEFAULT_GROUP@@shop-server', cluster='DEFAULT', metadata={preserved.register.source=SPRING_CLOUD}, scheduled=false, period=5000, stopped=false} to beat map.
+2022-01-27 20:27:43.042 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.naming][230] - [REGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 registering service DEFAULT_GROUP@@shop-server with instance: Instance{instanceId='null', ip='10.1.6.44', port=8030, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-01-27 20:27:43.103 [traceId:] [main] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][75] - nacos registry, DEFAULT_GROUP shop-server 10.1.6.44:8030 register finished
+2022-01-27 20:27:43.116 [traceId:] [main] [INFO ] [com.ipinyou.shop.ShopApplication][61] - Started ShopApplication in 2.215 seconds (JVM running for 3.312)
+2022-01-27 20:27:43.118 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.config.impl.ClientWorker][169] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [subscribe] shop-server.yml+DEFAULT_GROUP+f572a232-65c6-4a03-8faa-c276297fac38
+2022-01-27 20:27:43.118 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.config.impl.CacheData][92] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [add-listener] ok, tenant=f572a232-65c6-4a03-8faa-c276297fac38, dataId=shop-server.yml, group=DEFAULT_GROUP, cnt=1
+2022-01-27 20:27:43.118 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.config.impl.ClientWorker][169] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [subscribe] shop-server+DEFAULT_GROUP+f572a232-65c6-4a03-8faa-c276297fac38
+2022-01-27 20:27:43.118 [traceId:] [main] [INFO ] [com.alibaba.nacos.client.config.impl.CacheData][92] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [add-listener] ok, tenant=f572a232-65c6-4a03-8faa-c276297fac38, dataId=shop-server, group=DEFAULT_GROUP, cnt=1
+2022-01-27 20:27:44.139 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][232] - new ips(1) service: DEFAULT_GROUP@@shop-server@@DEFAULT -> [{"instanceId":"10.1.6.44#8030#DEFAULT#DEFAULT_GROUP@@shop-server","ip":"10.1.6.44","port":8030,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@shop-server","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 20:27:44.143 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][271] - current ips:(1) service: DEFAULT_GROUP@@shop-server@@DEFAULT -> [{"instanceId":"10.1.6.44#8030#DEFAULT#DEFAULT_GROUP@@shop-server","ip":"10.1.6.44","port":8030,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@shop-server","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 20:28:19.761 [traceId:] [http-nio-8030-exec-2] [INFO ] [org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/]][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-01-27 20:28:19.762 [traceId:] [http-nio-8030-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet][525] - Initializing Servlet 'dispatcherServlet'
+2022-01-27 20:28:19.771 [traceId:] [http-nio-8030-exec-2] [INFO ] [org.springframework.web.servlet.DispatcherServlet][547] - Completed initialization in 9 ms
+2022-01-27 20:28:19.789 [traceId:0bb2ca5113826c5f] [http-nio-8030-exec-2] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][88] - URL: http://localhost:8030/shop/get, ARGS: [],  CLASS_METHOD: com.ipinyou.shop.controller.ShopController.get
+2022-01-27 20:28:19.790 [traceId:0bb2ca5113826c5f] [http-nio-8030-exec-2] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][26] - 0bb2ca5113826c5f
+2022-01-27 20:28:19.795 [traceId:0bb2ca5113826c5f] [pool-2-thread-1] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][36] - 0bb2ca5113826c5f
+2022-01-27 20:28:19.827 [traceId:0bb2ca5113826c5f] [http-nio-8030-exec-2] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][46] - ShopController.get() execute result data:{"code":0,"message":"ok"}
+2022-01-27 20:28:19.827 [traceId:0bb2ca5113826c5f] [http-nio-8030-exec-2] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][48] - StopWatch '': running time = 39337583 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+039337583  100%  ShopController.get()
+
+2022-01-27 20:28:20.002 [traceId:0bb2ca5113826c5f] [pool-2-thread-1] [INFO ] [com.netflix.config.ChainedDynamicProperty][115] - Flipping property: user-service.ribbon.ActiveConnectionsLimit to use NEXT property: niws.loadbalancer.availabilityFilteringRule.activeConnectionsLimit = 2147483647
+2022-01-27 20:28:20.008 [traceId:0bb2ca5113826c5f] [pool-2-thread-1] [INFO ] [com.netflix.loadbalancer.BaseLoadBalancer][197] - Client: user-service instantiated a LoadBalancer: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:null
+2022-01-27 20:28:20.010 [traceId:0bb2ca5113826c5f] [pool-2-thread-1] [INFO ] [com.netflix.loadbalancer.DynamicServerListLoadBalancer][222] - Using serverListUpdater PollingServerListUpdater
+2022-01-27 20:28:20.234 [traceId:0bb2ca5113826c5f] [pool-2-thread-1] [INFO ] [com.netflix.loadbalancer.DynamicServerListLoadBalancer][150] - DynamicServerListLoadBalancer for client user-service initialized: DynamicServerListLoadBalancer:{NFLoadBalancer:name=user-service,current list of Servers=[],Load balancer stats=Zone stats: {},Server stats: []}ServerList:com.alibaba.cloud.nacos.ribbon.NacosServerList@4bf2c8f7
+2022-01-27 20:28:21.057 [traceId:410e66687358f90a] [http-nio-8030-exec-3] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][88] - URL: http://localhost:8030/shop/get, ARGS: [],  CLASS_METHOD: com.ipinyou.shop.controller.ShopController.get
+2022-01-27 20:28:21.058 [traceId:410e66687358f90a] [http-nio-8030-exec-3] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][26] - 410e66687358f90a
+2022-01-27 20:28:21.058 [traceId:410e66687358f90a] [http-nio-8030-exec-3] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][46] - ShopController.get() execute result data:{"code":0,"message":"ok"}
+2022-01-27 20:28:21.058 [traceId:410e66687358f90a] [pool-2-thread-2] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][36] - 410e66687358f90a
+2022-01-27 20:28:21.059 [traceId:410e66687358f90a] [http-nio-8030-exec-3] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][48] - StopWatch '': running time = 1436875 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+001436875  100%  ShopController.get()
+
+2022-01-27 20:28:27.917 [traceId:ce126e6df16a7792] [http-nio-8030-exec-4] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][88] - URL: http://localhost:8030/shop/get, ARGS: [],  CLASS_METHOD: com.ipinyou.shop.controller.ShopController.get
+2022-01-27 20:28:27.917 [traceId:ce126e6df16a7792] [http-nio-8030-exec-4] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][26] - ce126e6df16a7792
+2022-01-27 20:28:27.918 [traceId:ce126e6df16a7792] [http-nio-8030-exec-4] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][46] - ShopController.get() execute result data:{"code":0,"message":"ok"}
+2022-01-27 20:28:27.918 [traceId:ce126e6df16a7792] [pool-2-thread-3] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][36] - ce126e6df16a7792
+2022-01-27 20:28:27.918 [traceId:ce126e6df16a7792] [http-nio-8030-exec-4] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][48] - StopWatch '': running time = 806958 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+000806958  100%  ShopController.get()
+
+2022-01-27 20:29:12.244 [traceId:503b3361685257a8] [http-nio-8030-exec-5] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][88] - URL: http://localhost:8030/shop/get, ARGS: [],  CLASS_METHOD: com.ipinyou.shop.controller.ShopController.get
+2022-01-27 20:29:12.245 [traceId:503b3361685257a8] [http-nio-8030-exec-5] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][26] - 503b3361685257a8
+2022-01-27 20:29:12.246 [traceId:503b3361685257a8] [http-nio-8030-exec-5] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][46] - ShopController.get() execute result data:{"code":0,"message":"ok"}
+2022-01-27 20:29:12.247 [traceId:503b3361685257a8] [http-nio-8030-exec-5] [INFO ] [com.ipinyou.shop.common.AccessLogIntercept][48] - StopWatch '': running time = 2704709 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+002704709  100%  ShopController.get()
+
+2022-01-27 20:29:12.247 [traceId:503b3361685257a8] [pool-2-thread-4] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][36] - 503b3361685257a8
+2022-01-27 20:31:42.250 [traceId:] [main] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][49] - StopWatch '': running time = 1005118958 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+1005118958  100%  
+
+2022-01-27 20:33:02.584 [traceId:] [main] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][49] - StopWatch '': running time = 1005098667 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+1005098667  100%  执行
+
+2022-01-27 20:36:43.343 [traceId:] [main] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][56] - StopWatch '': running time = 2013934501 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+605144417  030%  连接
+1003736584  050%  处理
+405053500  020%  关闭
+
+2022-01-27 20:37:52.344 [traceId:] [main] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][56] - StopWatch '': running time = 2014519209 ns
+---------------------------------------------
+ns         %     Task name
+---------------------------------------------
+605021208  030%  连接
+1005064209  050%  处理
+404433792  020%  关闭
+
+2022-01-27 20:41:07.337 [traceId:] [main] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][56] - StopWatch '': running time = 2013948832 ns
+---------------------------------------------
+ms         %     Task name
+---------------------------------------------
+000000605  150%  连接
+000001004  249%  处理
+000000404  100%  关闭
+
+2022-01-27 20:41:37.363 [traceId:] [main] [INFO ] [com.ipinyou.shop.service.ShopServiceImpl][56] - StopWatch '': running time = 2013852709 ns
+---------------------------------------------
+ms         %     Task name
+---------------------------------------------
+000000604  030%  连接
+000001005  050%  处理
+000000404  020%  关闭
+
+2022-01-27 20:58:42.525 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][238] - removed ips(1) service: DEFAULT_GROUP@@shop-server@@DEFAULT -> [{"instanceId":"10.1.6.44#8030#DEFAULT#DEFAULT_GROUP@@shop-server","ip":"10.1.6.44","port":8030,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@shop-server","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 20:58:42.528 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][271] - current ips:(0) service: DEFAULT_GROUP@@shop-server@@DEFAULT -> []
+2022-01-27 20:58:42.592 [traceId:] [com.alibaba.nacos.naming.beat.sender] [INFO ] [com.alibaba.nacos.client.naming][230] - [REGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 registering service DEFAULT_GROUP@@shop-server with instance: Instance{instanceId='null', ip='10.1.6.44', port=8030, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='DEFAULT_GROUP@@shop-server', metadata={preserved.register.source=SPRING_CLOUD}}
+2022-01-27 20:58:44.628 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][232] - new ips(1) service: DEFAULT_GROUP@@shop-server@@DEFAULT -> [{"instanceId":"10.1.6.44#8030#DEFAULT#DEFAULT_GROUP@@shop-server","ip":"10.1.6.44","port":8030,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@shop-server","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 20:58:44.629 [traceId:] [com.alibaba.nacos.client.naming.updater] [INFO ] [com.alibaba.nacos.client.naming][271] - current ips:(1) service: DEFAULT_GROUP@@shop-server@@DEFAULT -> [{"instanceId":"10.1.6.44#8030#DEFAULT#DEFAULT_GROUP@@shop-server","ip":"10.1.6.44","port":8030,"weight":1.0,"healthy":true,"enabled":true,"ephemeral":true,"clusterName":"DEFAULT","serviceName":"DEFAULT_GROUP@@shop-server","metadata":{"preserved.register.source":"SPRING_CLOUD"},"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ipDeleteTimeout":30000}]
+2022-01-27 20:58:57.812 [traceId:] [com.alibaba.nacos.client.Worker.longPolling.fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [ERROR] [com.alibaba.nacos.client.config.http.ServerHttpAgent][169] - [NACOS SocketTimeoutException httpPost] currentServerAddr: http://121.37.226.39:8848， err : Read timed out
+2022-01-27 20:58:57.814 [traceId:] [com.alibaba.nacos.client.Worker.longPolling.fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [ERROR] [com.alibaba.nacos.client.config.http.ServerHttpAgent][189] - no available server, currentServerAddr : http://121.37.226.39:8848
+2022-01-27 20:58:57.816 [traceId:] [com.alibaba.nacos.client.Worker.longPolling.fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [ERROR] [com.alibaba.nacos.client.config.impl.ClientWorker][393] - [fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [check-update] get changed dataId exception
+java.net.ConnectException: no available server, currentServerAddr : http://121.37.226.39:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:67) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:380) [nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:347) [nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:535) [nacos-client-1.4.2.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-01-27 20:58:57.845 [traceId:] [com.alibaba.nacos.client.Worker.longPolling.fixed-121.37.226.39_8848-f572a232-65c6-4a03-8faa-c276297fac38] [ERROR] [com.alibaba.nacos.client.config.impl.ClientWorker][580] - longPolling error : 
+java.net.ConnectException: no available server, currentServerAddr : http://121.37.226.39:8848
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpPost(ServerHttpAgent.java:190) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpPost(MetricsHttpAgent.java:67) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateConfigStr(ClientWorker.java:380) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker.checkUpdateDataIds(ClientWorker.java:347) ~[nacos-client-1.4.2.jar:?]
+	at com.alibaba.nacos.client.config.impl.ClientWorker$LongPollingRunnable.run(ClientWorker.java:535) [nacos-client-1.4.2.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:264) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java) [?:?]
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2022-01-27 21:02:06.919 [traceId:] [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][145] - [NotifyCenter] Start destroying Publisher
+2022-01-27 21:02:06.919 [traceId:] [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][108] - [HttpClientBeanHolder] Start destroying common HttpClient
+2022-01-27 21:02:06.919 [traceId:] [Thread-29] [INFO ] [com.netflix.loadbalancer.PollingServerListUpdater][53] - Shutting down the Executor Pool for PollingServerListUpdater
+2022-01-27 21:02:06.920 [traceId:] [Thread-12] [WARN ] [com.alibaba.nacos.common.notify.NotifyCenter][162] - [NotifyCenter] Destruction of the end
+2022-01-27 21:02:06.920 [traceId:] [Thread-1] [WARN ] [com.alibaba.nacos.common.http.HttpClientBeanHolder][114] - [HttpClientBeanHolder] Destruction of the end
+2022-01-27 21:02:06.981 [traceId:] [SpringContextShutdownHook] [INFO ] [org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler][218] - Shutting down ExecutorService 'Nacos-Watch-Task-Scheduler'
+2022-01-27 21:02:06.983 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][94] - De-registering from Nacos Server now...
+2022-01-27 21:02:06.983 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][101] - [BEAT] removing beat: DEFAULT_GROUP@@shop-server:10.1.6.44:8030 from beat map.
+2022-01-27 21:02:06.983 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][260] - [DEREGISTER-SERVICE] f572a232-65c6-4a03-8faa-c276297fac38 deregistering service DEFAULT_GROUP@@shop-server with instance: Instance{instanceId='null', ip='10.1.6.44', port=8030, weight=1.0, healthy=true, enabled=true, ephemeral=true, clusterName='DEFAULT', serviceName='null', metadata={}}
+2022-01-27 21:02:07.057 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.cloud.nacos.registry.NacosServiceRegistry][114] - De-registration finished.
+2022-01-27 21:02:07.057 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][147] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown begin
+2022-01-27 21:02:10.071 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][149] - com.alibaba.nacos.client.naming.beat.BeatReactor do shutdown stop
+2022-01-27 21:02:10.072 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][413] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown begin
+2022-01-27 21:02:13.084 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][132] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown begin
+2022-01-27 21:02:16.095 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][136] - com.alibaba.nacos.client.naming.core.PushReceiver do shutdown stop
+2022-01-27 21:02:16.095 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][132] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown begin
+2022-01-27 21:02:16.096 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][134] - com.alibaba.nacos.client.naming.backups.FailoverReactor do shutdown stop
+2022-01-27 21:02:16.096 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][418] - com.alibaba.nacos.client.naming.core.HostReactor do shutdown stop
+2022-01-27 21:02:16.096 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][719] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown begin
+2022-01-27 21:02:16.097 [traceId:] [SpringContextShutdownHook] [WARN ] [com.alibaba.nacos.client.naming][72] - [NamingHttpClientManager] Start destroying NacosRestTemplate
+2022-01-27 21:02:16.097 [traceId:] [SpringContextShutdownHook] [WARN ] [com.alibaba.nacos.client.naming][79] - [NamingHttpClientManager] Destruction of the end
+2022-01-27 21:02:16.097 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.identify.CredentialWatcher][105] - [null] CredentialWatcher is stopped
+2022-01-27 21:02:16.098 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.identify.CredentialService][98] - [null] CredentialService is freed
+2022-01-27 21:02:16.098 [traceId:] [SpringContextShutdownHook] [INFO ] [com.alibaba.nacos.client.naming][723] - com.alibaba.nacos.client.naming.net.NamingProxy do shutdown stop
+2022-01-27 21:02:16.098 [traceId:] [SpringContextShutdownHook] [WARN ] [org.springframework.beans.factory.support.DisposableBeanAdapter][349] - Destroy method 'close' on bean with name 'nacosServiceRegistry' threw an exception: java.lang.NullPointerException
