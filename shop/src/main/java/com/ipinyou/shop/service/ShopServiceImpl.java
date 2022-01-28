@@ -38,6 +38,7 @@ public class ShopServiceImpl implements IShopService {
             System.out.println(JSON.toJSONString(data));
         }, threadPoolExecutor);
 
+
     }
 
 }
