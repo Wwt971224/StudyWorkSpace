@@ -17,6 +17,7 @@ public class ConcurrentFutureTest {
     @Test
     public void test1() throws InterruptedException {
         System.out.println("提交1");
+        System.out.println("提交2");
         StopWatch stopWatch = new StopWatch();
         stopWatch.start(String.valueOf(Thread.currentThread().getId()));
         log.info("{}主线程启动", Thread.currentThread().getId());
