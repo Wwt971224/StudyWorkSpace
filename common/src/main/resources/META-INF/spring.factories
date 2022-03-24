@@ -1,0 +1,4 @@
+org.springframework.cloud.openfeign.ImportBeanDefinitionRegistrar=\
+  common.feign.UserServiceClient
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+    common.feign.fallback.UserServiceClientFallback

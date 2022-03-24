@@ -1,8 +1,8 @@
-package com.ipinyou.shop.feign.fallback;
+package common.feign.fallback;
 
-import com.ipinyou.shop.feign.UserServiceClient;
 import common.api.ApiDataObject;
 import common.domain.vo.UserBaseVo;
+import common.feign.UserServiceClient;
 import feign.hystrix.FallbackFactory;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;

@@ -1,15 +1,14 @@
 package com.ipinyou.shop.service;
 
 import com.alibaba.fastjson.JSON;
-import com.ipinyou.shop.feign.UserServiceClient;
 import com.ipinyou.shop.service.impl.IShopService;
 import common.domain.vo.UserBaseVo;
+import common.feign.UserServiceClient;
 import lombok.extern.slf4j.Slf4j;
 import org.slf4j.MDC;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
-import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ThreadPoolExecutor;
 
 @Slf4j
@@ -31,12 +30,14 @@ public class ShopServiceImpl implements IShopService {
 //            System.out.println(JSON.toJSONString(data));
 //        });
 
-        CompletableFuture.runAsync(() ->
-        {
-            log.info(MDC.get("traceId"));
-            UserBaseVo data = userServiceClient.getByUserId(1L).getData();
-            System.out.println(JSON.toJSONString(data));
-        }, threadPoolExecutor);
+        UserBaseVo data = userServiceClient.getByUserId(1L).getData();
+        System.out.println(JSON.toJSONString(data));
+//        CompletableFuture.runAsync(() ->
+//        {
+//            log.info(MDC.get("traceId"));
+//            UserBaseVo data = userServiceClient.getByUserId(1L).getData();
+//            System.out.println(JSON.toJSONString(data));
+//        }, threadPoolExecutor);
 
 
     }

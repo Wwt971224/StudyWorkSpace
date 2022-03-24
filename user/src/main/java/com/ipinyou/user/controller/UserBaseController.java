@@ -37,7 +37,17 @@ public class UserBaseController {
 
     @GetMapping("/getById")
     public ApiDataObject<UserBaseVo> getByUserId(@RequestParam("user_id") Long userId) {
+        try {
+            Thread.sleep(1000000L);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
         return ApiDataObjectBuilder.newApiDataObject(userBaseService.getByUserId(userId));
+    }
+
+    @GetMapping("/getByIdCache")
+    public ApiDataObject<UserBaseVo> getByUserIdCache(@RequestParam("user_id") Long userId) {
+        return ApiDataObjectBuilder.newApiDataObject(userBaseService.getByUserIdCache(userId));
     }
 
 }

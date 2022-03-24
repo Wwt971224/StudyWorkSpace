@@ -11,3 +11,24 @@ spring:
       config:
         namespace: f572a232-65c6-4a03-8faa-c276297fac38
         file-extension: yml
+
+feign:
+  httpclient:
+    enabled: true
+#  client:
+#    config:
+#      default:
+#        readTimeout: 5000
+#        connectTimeout: 5000
+  hystrix:
+    enabled: true
+
+hystrix:
+  command:
+    default:
+      execution:
+        timeout:
+          enabled: true
+        isolation:
+          thread:
+            timeoutInMilliseconds: 60000

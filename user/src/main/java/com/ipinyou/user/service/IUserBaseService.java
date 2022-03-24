@@ -20,4 +20,6 @@ public interface IUserBaseService extends IService<UserBaseEntity> {
     boolean updateUser(UserBaseDto userBaseDto);
 
     UserBaseVo getByUserId(Long userId);
+
+    UserBaseVo getByUserIdCache(Long userId);
 }
