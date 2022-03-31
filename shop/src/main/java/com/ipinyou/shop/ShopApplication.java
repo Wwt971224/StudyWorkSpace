@@ -13,8 +13,8 @@ import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 @EnableAspectJAutoProxy
 @EnableHystrix
-//@EnableFeignClients(basePackages = "common.feign")
-@EnableFeignClients
+@EnableFeignClients(basePackages = "common.feign")
+//@EnableFeignClients
 @EnableDiscoveryClient
 @SpringBootApplication(exclude ={DataSourceAutoConfiguration.class } )
 //@ComponentScan(basePackages = {"common.feign.fallback","com.ipinyou.shop"})
