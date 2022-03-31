@@ -18,6 +18,7 @@ public class FailSafeDemo {
     public void rateLimiter_test() {
         System.out.println(1);
         System.out.println(2);
+        System.out.println(3);
         @SuppressWarnings("all")
         var rateLimiter = RateLimiter.create(10.0);
         IntStream.rangeClosed(1, 10).parallel().forEach(
