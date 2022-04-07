@@ -8,13 +8,12 @@ import com.ipinyou.user.service.IUserBaseService;
 import common.domain.dto.UserBaseDto;
 import common.domain.vo.UserBaseVo;
 import lombok.extern.slf4j.Slf4j;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.Update;
 import org.slf4j.MDC;
 import org.springframework.beans.BeanUtils;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Objects;
 
 /**
